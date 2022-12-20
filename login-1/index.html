@@ -3,20 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
+
     <title>Login-1</title>
   </head>
   <body>
     <div class="login-card">
       <h2>Login</h2>
-      <h3>Enter your credentials</h3>
       <form class="login-form">
         <input type="text" placeholder="Username" />
-        <input type="password" placeholder="Password" />
+        <input type="password" placeholder="Password" id="password" />
+        <button type="button" id="btnToggle" class="toggle">
+          <i id="eyeIcon" class="fa fa-eye"></i>
+        </button>
         <a href="https://website.com">Forgot your password?</a>
-        <button type="submit">LOGIN</button>
+        <button class="submitBtn" type="submit">LOGIN</button>
       </form>
     </div>
   </body>
+  <script type="text/javascript" src="script.js"></script>
 </html>
